@@ -1,0 +1,17 @@
+num = int(input())
+if num < 2:
+    print("Bukan bilangan prima")
+elif num == 2:
+    print("Bilangan prima")
+elif num > 2:
+    if num % 2 == 0:
+        print("Bukan bilangan prima")
+    if num % 2 != 0:
+        for x in range(2, num):
+            if num % x == 0:
+                print("Bukan bilangan prima")
+                break
+        else:
+            print("Bilangan prima")
+else:
+    ("Bukan bilangan prima")

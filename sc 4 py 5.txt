@@ -1,0 +1,7 @@
+Ist = []
+banyak_data = int(input("Masukkan Banyaknya Data = "))
+for i in range (banyak_data):
+    data = int(input(f"Masukkan Nilai Data ke {i+1} : "))
+    Ist.append(data)
+rata_rata = sum(Ist) / banyak_data
+print(rata_rata)
